@@ -11,7 +11,7 @@ RUN apk add --no-cache make gcc musl-dev linux-headers git && \
 FROM alpine:latest
 
 RUN apk add --no-cache ca-certificates curl && \
-    curl -q -o /genesis.json https://raw.githubusercontent.com/maticnetwork/launch/master/mainnet-v1/without-sentry/bor/genesis.json
+    curl -s -o /genesis.json https://raw.githubusercontent.com/maticnetwork/launch/master/mainnet-v1/without-sentry/bor/genesis.json
 
 COPY --from=builder /bor/build/bin/bor /usr/local/bin/
 

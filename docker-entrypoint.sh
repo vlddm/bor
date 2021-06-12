@@ -9,7 +9,7 @@ fi
 
 if [ "$1" = "bor" ]; then
 
-  if [ ! -d $DATADIR/bor/chaindata ]; then
+  if [ ! -d $DATADIR/bor/nodekey ]; then
     echo "$0: creating $DATADIR"
     mkdir -p "$DATADIR"
     chmod 700 "$DATADIR"
