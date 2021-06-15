@@ -65,11 +65,11 @@ HTTPHost = "0.0.0.0"
 HTTPPort = 8545
 HTTPCors = ["*"]
 HTTPVirtualHosts = ["*"]
-HTTPModules = ["eth", "net", "web3", "admin", "debug", "txpool", "bor"]
+HTTPModules = ["eth", "net", "web3", "admin", "debug", "bor"]
 WSHost = "0.0.0.0"
-WSPort = 8545
+WSPort = 8546
 WSOrigins = ["*"]
-WSModules = ["eth", "net", "web3", "admin", "debug", "txpool", "bor"]
+WSModules = ["eth", "net", "web3", "admin", "debug", "bor"]
 GraphQLVirtualHosts = ["*"]
 
 [Node.P2P]
