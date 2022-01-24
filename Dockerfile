@@ -1,7 +1,7 @@
 # Build Geth in a stock Go builder container
 FROM golang:1.16-alpine as builder
 
-ENV VERSION=v0.2.6
+ENV VERSION=v0.2.14
 
 RUN apk add --no-cache make gcc musl-dev linux-headers git && \
     cd / && git clone --depth=1 -b $VERSION https://github.com/maticnetwork/bor.git && \
